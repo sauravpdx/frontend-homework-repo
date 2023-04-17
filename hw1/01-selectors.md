@@ -26,9 +26,9 @@
 24. apple:last-of-type, orange:last-of-type
 25. bento:empty
 26. apple:not(.small)
-27. Can't solve
-28. Can't solve
-29. Can't solve
-30. Can't solve
-31. Can't solve
-32. Can't solve
+27. [for]
+28. plate[for]
+29. bento[for="Vitaly"]
+30. [for^="Sa"]
+31. [for$="ato"]
+32. [for*="obb"]
