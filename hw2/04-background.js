@@ -11,7 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const y = Math.floor(Math.random() * 256);
     const z = Math.floor(Math.random() * 256);
     const a = 0.2;
+<<<<<<< HEAD
     const RGBColor = `rgb(${x},${y},${z},${a})`;
+=======
+    const RGBColor = "rgb(" + x + "," + y + "," + z + "," + a + ")";
+>>>>>>> 4decafd (hw 2 submission)
     return RGBColor;
   };
 
@@ -25,23 +29,40 @@ document.addEventListener("DOMContentLoaded", () => {
       changeBackgroundColor,
       interval * 1000
     );
+<<<<<<< HEAD
     toggleButton.textContent = "Stop";
     toggleButton.classList.remove("btn-primary");
     toggleButton.classList.add("btn-danger");
+=======
+>>>>>>> 4decafd (hw 2 submission)
   };
 
   const stop = () => {
     clearInterval(backgroundColorInterval);
+<<<<<<< HEAD
     toggleButton.textContent = "Start";
     toggleButton.classList.remove("btn-danger");
     toggleButton.classList.add("btn-primary");
+=======
+>>>>>>> 4decafd (hw 2 submission)
   };
 
   toggleButton.addEventListener("click", () => {
     if (!isStarted) {
       start();
+<<<<<<< HEAD
     } else {
       stop();
+=======
+      toggleButton.textContent = "Stop";
+      toggleButton.classList.remove("btn-primary");
+      toggleButton.classList.add("btn-danger");
+    } else {
+      stop();
+      toggleButton.textContent = "Start";
+      toggleButton.classList.remove("btn-danger");
+      toggleButton.classList.add("btn-primary");
+>>>>>>> 4decafd (hw 2 submission)
     }
     isStarted = !isStarted;
   });
