@@ -25,23 +25,23 @@ document.addEventListener("DOMContentLoaded", () => {
       changeBackgroundColor,
       interval * 1000
     );
+    toggleButton.textContent = "Stop";
+    toggleButton.classList.remove("btn-primary");
+    toggleButton.classList.add("btn-danger");
   };
 
   const stop = () => {
     clearInterval(backgroundColorInterval);
+    toggleButton.textContent = "Start";
+    toggleButton.classList.remove("btn-danger");
+    toggleButton.classList.add("btn-primary");
   };
 
   toggleButton.addEventListener("click", () => {
     if (!isStarted) {
       start();
-      toggleButton.textContent = "Stop";
-      toggleButton.classList.remove("btn-primary");
-      toggleButton.classList.add("btn-danger");
     } else {
       stop();
-      toggleButton.textContent = "Start";
-      toggleButton.classList.remove("btn-danger");
-      toggleButton.classList.add("btn-primary");
     }
     isStarted = !isStarted;
   });
