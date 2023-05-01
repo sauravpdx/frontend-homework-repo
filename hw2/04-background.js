@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const y = Math.floor(Math.random() * 256);
     const z = Math.floor(Math.random() * 256);
     const a = 0.2;
-    const RGBColor = "rgb(" + x + "," + y + "," + z + "," + a + ")";
+    const RGBColor = `rgb(${x},${y},${z},${a})`;
     return RGBColor;
   };
 
