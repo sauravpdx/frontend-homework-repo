@@ -30,26 +30,39 @@ document.addEventListener("DOMContentLoaded", () => {
       interval * 1000
     );
 <<<<<<< HEAD
+<<<<<<< HEAD
     toggleButton.textContent = "Stop";
     toggleButton.classList.remove("btn-primary");
     toggleButton.classList.add("btn-danger");
 =======
 >>>>>>> 4decafd (hw 2 submission)
+=======
+    toggleButton.textContent = "Stop";
+    toggleButton.classList.remove("btn-primary");
+    toggleButton.classList.add("btn-danger");
+>>>>>>> 779f7eb (Improved the code)
   };
 
   const stop = () => {
     clearInterval(backgroundColorInterval);
+<<<<<<< HEAD
 <<<<<<< HEAD
     toggleButton.textContent = "Start";
     toggleButton.classList.remove("btn-danger");
     toggleButton.classList.add("btn-primary");
 =======
 >>>>>>> 4decafd (hw 2 submission)
+=======
+    toggleButton.textContent = "Start";
+    toggleButton.classList.remove("btn-danger");
+    toggleButton.classList.add("btn-primary");
+>>>>>>> 779f7eb (Improved the code)
   };
 
   toggleButton.addEventListener("click", () => {
     if (!isStarted) {
       start();
+<<<<<<< HEAD
 <<<<<<< HEAD
     } else {
       stop();
@@ -63,6 +76,10 @@ document.addEventListener("DOMContentLoaded", () => {
       toggleButton.classList.remove("btn-danger");
       toggleButton.classList.add("btn-primary");
 >>>>>>> 4decafd (hw 2 submission)
+=======
+    } else {
+      stop();
+>>>>>>> 779f7eb (Improved the code)
     }
     isStarted = !isStarted;
   });
