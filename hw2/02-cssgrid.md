@@ -14,6 +14,7 @@
 12. grid-row-start : 3
 13. grid-row: 3/6
 14. grid-column: 2;grid-row: 5;
+<<<<<<< HEAD
 15. grid-column:2/span4;grid-row:1/6;
 16. grid-area: 1 / 2 / 4 / 6;
 17. grid-area:2/3/5/6;
@@ -28,3 +29,19 @@
 26. grid-template-rows:50px 0 0 0 1fr;
 27. grid-template:60% 200px / 200px;
 28. grid:1fr 0% 50px/1fr 80%;
+=======
+15. can't solve
+16. grid-area: 1 / 2 / 4 / 6;
+17. can't solve
+18. order : 1
+19. order : -1
+20. grid-template-columns: 50% 50%;
+21.
+22.
+23.
+24.
+25.
+26.
+27.
+28.
+>>>>>>> 14e4f9a (hw1 submission)

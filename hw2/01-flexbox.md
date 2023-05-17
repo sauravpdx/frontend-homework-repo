@@ -23,4 +23,12 @@
 21. align-content: flex-start;
 22. align-content: flex-end;
 23. flex-direction: column-reverse;align-content: center;
+<<<<<<< HEAD
+<<<<<<< HEAD
 24. align-content: space-between; flex-flow: column-reverse wrap-reverse; justify-content: center;
+=======
+24. can't solve
+>>>>>>> 4decafd (hw 2 submission)
+=======
+24. align-content: space-between; flex-flow: column-reverse wrap-reverse; justify-content: center;
+>>>>>>> f9e8dad (updated the code)
