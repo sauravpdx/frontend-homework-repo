@@ -1,9 +1,8 @@
 // url for the Thrones API
 const url = "https://thronesapi.com/api/v2/Characters";
 const loader = document.getElementById("loading");
-const errormessage = document.getElementById("error");
 
-const fetchThrones = async (Thronesurl) => {
+const fetchThrones = async (thronesUrl) => {
   try {
     const response = await fetch(Thronesurl);
     const data = await response.json();
@@ -14,7 +13,7 @@ const fetchThrones = async (Thronesurl) => {
   }
 };
 
-const runfunThrones = async () => {
+const runFunThrones = async () => {
   const nonAlcoholicDrinks = await fetchThrones(url);
   const resultsSection = document.getElementById("results");
   nonAlcoholicDrinks.forEach((throne) => {
@@ -35,7 +34,6 @@ const runfunThrones = async () => {
           `;
     resultsSection.innerHTML += card;
   });
-  loader.style.display = "none";
 };
 
-runfunThrones();
+runFunThrones();
