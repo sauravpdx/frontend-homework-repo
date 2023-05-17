@@ -52,7 +52,7 @@ const Validator = {
   Bronn: ["Bronn"],
 };
 
-const Thronesurl = "https://thronesapi.com/api/v2/Characters";
+const thronesUrl = "https://thronesapi.com/api/v2/Characters";
 
 const fetchThrones = async () => {
   try {
@@ -61,7 +61,6 @@ const fetchThrones = async () => {
     return data;
   } catch (error) {
     console.error("Error:", error);
-    errormessage.style.display = "block";
     return [];
   }
 };
